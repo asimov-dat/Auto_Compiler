@@ -1,3 +1,0 @@
-/Users/chrisbetancur/Projects/Tutorials/Exploitation/src/LinkedList/main.c
-/Users/chrisbetancur/Projects/Tutorials/Exploitation/src/LinkedList/linked_list.c
-/Users/chrisbetancur/Projects/Tutorials/Exploitation/src/LinkedList/node.c

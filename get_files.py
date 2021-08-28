@@ -14,9 +14,10 @@ def get_ext(file_name):
 def traverse(file_list, directory):
     if os.path.dirname(directory) == "auto_compile":
         return
+    print(directory)
     for file_name in os.listdir(directory):
         path = os.path.join(directory, file_name)
-        # print("Path: ", path, " Ext: ", get_ext(file_name))
+        print("Path: ", path, " Ext: ", get_ext(file_name))
 
         if get_ext(file_name) == file_list.file_type:
             file = File(path, file_name, get_ext(file_name))
@@ -78,9 +79,9 @@ def traverse_back(name, path):
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         print(sys.argv)
-        if sys.argv[1] == "c":
+        '''if sys.argv[1] == "c":
             print(sys.argv)
-            return get_usr_path(name=sys.argv[2], send_to_file=True)
+            return get_usr_path(name=sys.argv[2], send_to_file=True)'''
         find_by_ext(get_usr_path(sys.argv[1]), sys.argv[2])
     else:
         find_by_ext(get_usr_path(sys.argv[1]), sys.argv[2])
