@@ -78,11 +78,11 @@ def traverse_back(name, path):
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        print(sys.argv)
+        print("Arg 1: ", sys.argv[1], " Arg 2: ", sys.argv[2])
         '''if sys.argv[1] == "c":
             print(sys.argv)
             return get_usr_path(name=sys.argv[2], send_to_file=True)'''
-        find_by_ext(get_usr_path(sys.argv[1]), sys.argv[2])
+        find_by_ext(get_usr_path(sys.argv[2]), sys.argv[1])
     else:
         find_by_ext(get_usr_path(sys.argv[1]), sys.argv[2])
     # get_src_path()
